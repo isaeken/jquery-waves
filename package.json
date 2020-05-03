@@ -1,0 +1,33 @@
+{
+  "name": "jquery-waves",
+  "description": "The simplest waves for jQuery",
+  "homepage": "https://github.com/isaeken/jquery-waves",
+  "author": "İsa Eken <hello@isaeken.com.tr> (https://www.isaeken.com.tr)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaeken/jquery-waves.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isaeken/jquery-waves/issues"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": "jquery.waves.js",
+  "style": "jquery.waves.css",
+  "dependencies": {
+    "jquery": "^3.5.0"
+  },
+  "devDependencies": {
+    "jQuery": "^1.7.4"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "toast"
+  ]
+}

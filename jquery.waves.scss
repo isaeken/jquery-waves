@@ -1,0 +1,36 @@
+/**
+ *     @author İsa Eken <hello@isaeken.com.tr>
+ *     @website https://isaeken.com.tr
+ *     @github https://github.com/isaeken
+ *     @name jquery.waves
+ */
+
+$waves-effect-color: #000000 !default;
+$waves-effect-opacity: 0.15 !default;
+$waves-effect-radius: 50% !default;
+
+.waves-test
+{
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  user-select: none;
+  cursor: pointer;
+}
+
+.waves-effect
+{
+  position: relative;
+  overflow: hidden;
+
+  .ie-waves-effect
+  {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: $waves-effect-radius;
+    background-color: $waves-effect-color;
+    opacity: $waves-effect-opacity;
+  }
+}
