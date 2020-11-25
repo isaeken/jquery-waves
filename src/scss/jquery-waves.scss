@@ -4,6 +4,13 @@
 {
   position: relative !important;
   overflow: hidden !important;
+  &.waves-light .ie-waves-ripple { background-color: $waves-color-light; }
+  &.waves-red .ie-waves-ripple { background-color: $waves-color-red; }
+  &.waves-yellow .ie-waves-ripple { background-color: $waves-color-yellow; }
+  &.waves-orange .ie-waves-ripple { background-color: $waves-color-orange; }
+  &.waves-purple .ie-waves-ripple { background-color: $waves-color-purple; }
+  &.waves-green .ie-waves-ripple { background-color: $waves-color-green; }
+  &.waves-teal .ie-waves-ripple { background-color: $waves-color-teal; }
 }
 
 .ie-waves-ripple

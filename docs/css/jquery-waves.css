@@ -1,29 +1,40 @@
-@charset "UTF-8";
-/**
- *     @author İsa Eken <hello@isaeken.com.tr>
- *     @website https://isaeken.com.tr
- *     @github https://github.com/isaeken
- *     @name jquery.waves
- */
-.waves-test {
-  position: relative;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  user-select: none;
-  cursor: pointer;
-}
-
 .waves-effect {
-  position: relative;
-  overflow: hidden;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
-.ie-waves-effect {
+.waves-effect.waves-light .ie-waves-ripple {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.waves-effect.waves-red .ie-waves-ripple {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+
+.waves-effect.waves-yellow .ie-waves-ripple {
+  background-color: rgba(255, 235, 59, 0.7);
+}
+
+.waves-effect.waves-orange .ie-waves-ripple {
+  background-color: rgba(255, 152, 0, 0.7);
+}
+
+.waves-effect.waves-purple .ie-waves-ripple {
+  background-color: rgba(156, 39, 176, 0.7);
+}
+
+.waves-effect.waves-green .ie-waves-ripple {
+  background-color: rgba(76, 175, 80, 0.7);
+}
+
+.waves-effect.waves-teal .ie-waves-ripple {
+  background-color: rgba(0, 150, 136, 0.7);
+}
+
+.ie-waves-ripple {
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color: #000000;
-  opacity: 0.15;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
