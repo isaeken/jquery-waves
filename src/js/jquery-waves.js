@@ -99,10 +99,10 @@ if (!window.jQuery) {
         }
 
         /**
-         * set ripple opacity '0.15' if its null
+         * set ripple opacity '1' if its null
          */
         if (opacity === null) {
-            opacity = '0.15';
+            opacity = '1';
         }
 
         /**

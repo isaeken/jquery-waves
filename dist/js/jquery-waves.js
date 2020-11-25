@@ -77,7 +77,7 @@ if (!window.jQuery) {
      * @type {jQuery.fn.init|jQuery|HTMLElement}
      */
 
-    var $effect = $('<div class="ie-waves-effect"></div>');
+    var $effect = $('<div class="ie-waves-ripple"></div>');
     /**
      * original css position value
      * @type {jQuery}
@@ -114,12 +114,12 @@ if (!window.jQuery) {
       backgroundColor = randomColor();
     }
     /**
-     * set ripple opacity '0.15' if its null
+     * set ripple opacity '1' if its null
      */
 
 
     if (opacity === null) {
-      opacity = '0.15';
+      opacity = '1';
     }
     /**
      * apply styles to ripple
