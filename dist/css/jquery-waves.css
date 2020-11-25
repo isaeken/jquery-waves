@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.waves-effect .ie-waves-effect {
+.ie-waves-effect {
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 50%;

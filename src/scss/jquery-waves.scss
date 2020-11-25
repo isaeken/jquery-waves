@@ -24,13 +24,13 @@ $waves-effect-radius: 50% !default;
 {
   position: relative;
   overflow: hidden;
+}
 
-  .ie-waves-effect
-  {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border-radius: $waves-effect-radius;
-    background-color: $waves-effect-color;
-    opacity: $waves-effect-opacity;
-  }
+.ie-waves-effect
+{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: $waves-effect-radius;
+  background-color: $waves-effect-color;
+  opacity: $waves-effect-opacity;
 }
