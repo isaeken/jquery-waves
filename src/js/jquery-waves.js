@@ -1,9 +1,8 @@
-/**
- *     @author İsa Eken <hello@isaeken.com.tr>
- *     @website https://isaeken.com.tr
- *     @github https://github.com/isaeken
- *     @name jquery.waves
- */
+// jquery-waves 1.1.0
+// (c) 2020 İsa Eken
+// jquery-waves may be freely distributed under the MIT license.
+// for all details and documentation:
+// https://github.com/isaeken/jquery-waves
 
 if (!window.jQuery) console.error('Waves required jQuery.');
 else
