@@ -63,7 +63,7 @@ if (!window.jQuery) {
          * wave ripple element
          * @type {jQuery.fn.init|jQuery|HTMLElement}
          */
-        const $effect = $('<div class="ie-waves-effect"></div>');
+        const $effect = $('<div class="ie-waves-ripple"></div>');
 
         /**
          * original css position value
