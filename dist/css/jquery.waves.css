@@ -19,6 +19,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .waves-effect .ie-waves-effect {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -26,5 +27,3 @@
   background-color: #000000;
   opacity: 0.15;
 }
-
-/*# sourceMappingURL=jquery.waves.css.map */

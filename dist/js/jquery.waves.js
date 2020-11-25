@@ -15,7 +15,7 @@ if (!window.jQuery) console.error('Waves required jQuery.');else {
 
       var _duration = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 800;
 
-      var _handler = arguments.length > 5 ? arguments[5] : undefined;
+      var _handler = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : function () {};
 
       if (!$(this).hasClass('waves-effect')) console.error('waves class required.');else {
         var $wave = $('<div class="ie-waves-effect"></div>');
