@@ -1,12 +1,47 @@
-A simple & lightweight waves effects plugin for jQuery.
+# jquery-waves
+A simple & lightweight waves effect plugin
 
-## License (MIT)
+---
 
-Copyright (c) 2020 İsa Eken
+<center>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+![Requires.io](https://img.shields.io/requires/github/isaeken/jquery-waves) ![npm](https://img.shields.io/npm/dt/jquery-waves) ![GitHub](https://img.shields.io/github/license/isaeken/jquery-waves) ![npm](https://img.shields.io/npm/v/jquery-waves)
+![GitHub followers](https://img.shields.io/github/followers/isaeken?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/isaeken/jquery-waves?style=social)
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+</center>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---
 
+![isaeken/jquery-waves](https://raw.githubusercontent.com/isaeken/jquery-waves/master/docs/img/ss.png)
+
+## Installation
+You can install jquery-waves plugin using npm or include directly files
+
+#### install using npm
+```bash
+npm install jquery-waves
+```
+#### or include files
+````html
+<head>
+...
+<link rel="stylesheet" href="/your/servers/assets/path/css/jquery-waves.min.css">
+<script src="/your/servers/assets/path/js/jquery.min.js"></script>
+<script src="/your/servers/assets/path/js/jquery-waves.min.js"></script>
+...
+</head>
+````
+
+## Simple Usage
+Creating wave effect with classes
+````html
+<button class="waves-effect">Click me</button>
+````
+or programmatically
+````javascript
+$('#element').waveEffect(0, 0);
+````
+
+## Help and docs
+Please report bugs from issues tab
+- [Documentation](https://isaeken.github.io/jquery-waves/)
