@@ -190,7 +190,11 @@ if (!window.jQuery) {
        * call handler after animation complete
        */
 
-      onComplete();
+      if (typeof onComplete == 'function') {
+        onComplete();
+      } else {
+        eval(onComplete);
+      }
     });
     return this;
   };
