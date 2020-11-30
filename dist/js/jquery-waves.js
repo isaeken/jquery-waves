@@ -139,6 +139,14 @@ if (!window.jQuery) {
       opacity = '1';
     }
     /**
+     * set duration 800 if its null
+     */
+
+
+    if (duration === null) {
+      duration = 800;
+    }
+    /**
      * apply styles to ripple
      */
 
@@ -186,12 +194,17 @@ if (!window.jQuery) {
      * animate ripple
      */
 
-    $effect.animate({
+    var animateOptions = {
       width: size + 'px',
-      height: size + 'px',
-      opacity: 0
-    }, duration, function () {
-      if (autoClose === true) {
+      height: size + 'px'
+    };
+
+    if (autoClose) {
+      animateOptions.opacity = 0;
+    }
+
+    $effect.animate(animateOptions, duration, function () {
+      if (autoClose) {
         $effect.waveRemove(onComplete);
       }
     });
