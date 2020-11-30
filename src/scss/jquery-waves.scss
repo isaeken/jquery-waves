@@ -4,6 +4,7 @@
 {
   position: relative !important;
   overflow: hidden !important;
+  user-select: none;
   &.waves-light .ie-waves-ripple { background-color: $waves-color-light; }
   &.waves-red .ie-waves-ripple { background-color: $waves-color-red; }
   &.waves-yellow .ie-waves-ripple { background-color: $waves-color-yellow; }
