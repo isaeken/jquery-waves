@@ -190,7 +190,7 @@ $(document).ready(() => {
     /**
      * on .waves-effect and [data-waves] click event
      */
-    $('.waves-effect, [data-waves]').click(function (event) {
+    $('.wave-effect, .waves-effect, [data-waves]').click(function (event) {
         /**
          * the target element
          * @type {*|jQuery.fn.init|jQuery|HTMLElement}
