@@ -16,6 +16,8 @@
 .ie-waves-ripple
 {
   position: absolute;
+  margin: 0;
+  padding: 0;
   transform: translate(-50%, -50%);
   border-radius: $waves-ripple-radius;
   background-color: $waves-ripple-color;
