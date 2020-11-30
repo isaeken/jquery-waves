@@ -68,6 +68,11 @@
             height: 250px;
             border: 1px solid black;
         }
+
+        .bg-black {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
     </style>
 
     <!-- Scripts -->
@@ -98,6 +103,7 @@
 
         <h2>Documentation</h2>
 
+        <br>
         <h3>Creating Waves Effect</h3>
         <div>
             You can create waves using classes for example: <br>
@@ -116,17 +122,41 @@
             </div>
         </div>
 
+        <br><br>
         <h3>Wave effect with background color</h3>
         <div>
-            <code>&lt;button data-waves data-waves-background-color="rgba(255, 0, 0, 0.35)" &gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-background-color="rgba(255, 0, 0, 0.35)"&gt;Button&lt;/button&gt;</code>
             <div>
                 <button data-waves data-waves-background-color="rgba(255, 0, 0, 0.35)" class="sm">Small Button</button>
                 <button data-waves data-waves-background-color="rgba(255, 0, 0, 0.35)" class="">Button</button>
                 <button data-waves data-waves-background-color="rgba(255, 0, 0, 0.35)" class="lg">Large Button</button>
             </div>
+            <h4 class="text-gray-700">Colored Wave With Classes</h4>
+            <div>
+                <code>
+                    &lt;button class="waves-effect"&gt;Default&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-light bg-black"&gt;Light&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-red"&gt;Red&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-yellow"&gt;Yellow&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-orange"&gt;Orange&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-purple"&gt;Purple&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-green"&gt;Green&lt;/button&gt;<br>
+                    &lt;button class="waves-effect waves-teal"&gt;Teal&lt;/button&gt;<br>
+                </code>
+                <div>
+                    <button class="waves-effect">Default</button>
+                    <button class="waves-effect waves-light bg-black">Light</button>
+                    <button class="waves-effect waves-red">Red</button>
+                    <button class="waves-effect waves-yellow">Yellow</button>
+                    <button class="waves-effect waves-orange">Orange</button>
+                    <button class="waves-effect waves-purple">Purple</button>
+                    <button class="waves-effect waves-green">Green</button>
+                    <button class="waves-effect waves-teal">Teal</button>
+                </div>
+            </div>
             <h4 class="text-gray-700">Rainbow Wave</h4>
             <div>
-                <code>&lt;button data-waves data-waves-background-color="RANDOM" &gt;Button&lt;/button&gt;</code>
+                <code>&lt;button data-waves data-waves-background-color="RANDOM"&gt;Button&lt;/button&gt;</code>
                 <div>
                     <button data-waves data-waves-background-color="RANDOM" class="sm">Small Button</button>
                     <button data-waves data-waves-background-color="RANDOM" class="">Button</button>
@@ -135,9 +165,10 @@
             </div>
         </div>
 
+        <br><br>
         <h3>Wave effect with opacity</h3>
         <div>
-            <code>&lt;button data-waves data-waves-background-color="red" data-waves-opacity="0.35" &gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-background-color="red" data-waves-opacity="0.35"&gt;Button&lt;/button&gt;</code>
             <div>
                 <button data-waves data-waves-background-color="red" data-waves-opacity="0.35" class="sm">Small Button</button>
                 <button data-waves data-waves-background-color="red" data-waves-opacity="0.35" class="">Button</button>
@@ -145,24 +176,25 @@
             </div>
         </div>
 
+        <br><br>
         <h3>Wave effect with duration</h3>
         <div>
             <h4 class="text-gray-700">Default</h4>
-            <code>&lt;button data-waves data-waves-duration="800" &gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="800"&gt;Button&lt;/button&gt;</code>
             <div>
                 <button data-waves data-waves-duration="800" class="sm">Small Button</button>
                 <button data-waves data-waves-duration="800" class="">Button</button>
                 <button data-waves data-waves-duration="800" class="lg">Large Button</button>
             </div>
             <h4 class="text-gray-700">Fast</h4>
-            <code>&lt;button data-waves data-waves-duration="300" &gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="300"&gt;Button&lt;/button&gt;</code>
             <div>
                 <button data-waves data-waves-duration="300" class="sm">Small Button</button>
                 <button data-waves data-waves-duration="300" class="">Button</button>
                 <button data-waves data-waves-duration="300" class="lg">Large Button</button>
             </div>
             <h4 class="text-gray-700">Slow</h4>
-            <code>&lt;button data-waves data-waves-duration="1200" &gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="1200"&gt;Button&lt;/button&gt;</code>
             <div>
                 <button data-waves data-waves-duration="1200" class="sm">Small Button</button>
                 <button data-waves data-waves-duration="1200" class="">Button</button>
@@ -170,9 +202,10 @@
             </div>
         </div>
 
+        <br><br>
         <h3>Wave effect on complete event</h3>
         <div>
-            <code>&lt;button data-waves data-waves-duration="800" &gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="800"&gt;Button&lt;/button&gt;</code>
             <div>
                 <button data-waves data-waves-on-complete="alert('Completed wave effect');" class="sm">Small Button</button>
                 <button data-waves data-waves-on-complete="alert('Completed wave effect');" class="">Button</button>
@@ -180,6 +213,7 @@
             </div>
         </div>
 
+        <br><br>
         <h3>Wave effect on custom element</h3>
         <div>
             <code><pre>.box {
@@ -198,6 +232,7 @@
             </div>
         </div>
 
+        <br><br>
         <h3>Create wave effect with programmatically</h3>
         <div>
             <code><pre>&lt;div id="elementId" class="box"&gt;Click me&lt;/div&gt;
