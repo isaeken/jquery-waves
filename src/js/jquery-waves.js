@@ -1,4 +1,4 @@
-// jquery-waves 1.1.0
+// jquery-waves
 // (c) 2020 İsa Eken
 // jquery-waves may be freely distributed under the MIT license.
 // for all details and documentation:
