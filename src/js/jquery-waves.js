@@ -43,6 +43,32 @@ if (!window.jQuery) {
     };
 
     /**
+     * remove wave ripple
+     * @param onComplete
+     */
+    $.fn.waveRemove = function (onComplete) {
+        /**
+         * the target ripple
+         * @type {jQuery.fn.init|jQuery|HTMLElement}
+         */
+        const $effect = $(this);
+
+        /**
+         * remove ripple after animation complete
+         */
+        $effect.remove();
+
+        /**
+         * call handler after animation complete
+         */
+        if (typeof onComplete == 'function') {
+            onComplete();
+        } else {
+            eval(onComplete);
+        }
+    };
+
+    /**
      * create wave effect to element
      * @param positionX
      * @param positionY
@@ -50,9 +76,10 @@ if (!window.jQuery) {
      * @param opacity
      * @param duration
      * @param onComplete
+     * @param autoClose
      * @returns {jQuery}
      */
-    $.fn.waveEffect = function (positionX, positionY, backgroundColor = null, opacity = null, duration = 800, onComplete = function () {}) {
+    $.fn.waveEffect = function (positionX, positionY, backgroundColor = null, opacity = null, duration = 800, onComplete = function () {}, autoClose = true) {
         /**
          * the target element
          * @type {jQuery.fn.init|jQuery|HTMLElement}
@@ -64,18 +91,6 @@ if (!window.jQuery) {
          * @type {jQuery.fn.init|jQuery|HTMLElement}
          */
         const $effect = $('<div class="ie-waves-ripple"></div>');
-
-        /**
-         * original css position value
-         * @type {jQuery}
-         */
-        let originalPosition = $this.css('position');
-
-        /**
-         * original css overflow value
-         * @type {jQuery}
-         */
-        let originalOverflow = $this.css('overflow');
 
         /**
          * set y position if its lower than 0
@@ -155,27 +170,8 @@ if (!window.jQuery) {
             height: size + 'px',
             opacity: 0,
         }, duration, function () {
-            /**
-             * remove ripple after animation complete
-             */
-            $effect.remove();
-
-            /**
-             * set target default styles after animation complete
-             * its disabled because it causes an bug on fast clicking
-             */
-            // $this.css({
-            //     position: originalPosition,
-            //     overflow: originalOverflow,
-            // });
-
-            /**
-             * call handler after animation complete
-             */
-            if (typeof onComplete == 'function') {
-                onComplete();
-            } else {
-                eval(onComplete);
+            if (autoClose === true) {
+                $effect.waveRemove(onComplete);
             }
         });
 
