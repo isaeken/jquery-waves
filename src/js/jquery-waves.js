@@ -225,13 +225,13 @@ $(document).ready(() => {
          * calculate clicked position X
          * @type {number}
          */
-        let positionX = event.pageX - this.offsetLeft;
+        let positionX = event.pageX - $this.offset().left;
 
         /**
          * calculate clicked position Y
          * @type {number}
          */
-        let positionY = event.pageY - this.offsetTop;
+        let positionY = event.pageY - $this.offset().top;
 
         /**
          * execute ripple effect to target
