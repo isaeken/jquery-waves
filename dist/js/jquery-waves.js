@@ -180,12 +180,13 @@ if (!window.jQuery) {
       $effect.remove();
       /**
        * set target default styles after animation complete
+       * its disabled because it causes an bug on fast clicking
        */
+      // $this.css({
+      //     position: originalPosition,
+      //     overflow: originalOverflow,
+      // });
 
-      $this.css({
-        position: originalPosition,
-        overflow: originalOverflow
-      });
       /**
        * call handler after animation complete
        */
