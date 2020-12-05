@@ -1,12 +1,21 @@
-$waves-color-default:   rgba(0, 0, 0, 0.2) !default;
-$waves-color-light:     rgba(255, 255, 255, 0.45) !default;
-$waves-color-red:       rgba(244, 67, 54, .70) !default;
-$waves-color-yellow:    rgba(255, 235, 59, .70) !default;
-$waves-color-orange:    rgba(255, 152, 0, .70) !default;
-$waves-color-purple:    rgba(156, 39, 176, 0.70) !default;
-$waves-color-green:     rgba(76, 175, 80, 0.70) !default;
-$waves-color-teal:      rgba(0, 150, 136, 0.70) !default;
+$waves-color-default:   rgba(0, 0, 0, 1) !default;
+$waves-color-light:     rgba(255, 255, 255, 1) !default;
+$waves-color-red:       rgba(244, 67, 54, 1) !default;
+$waves-color-yellow:    rgba(255, 235, 59, 1) !default;
+$waves-color-orange:    rgba(255, 152, 0, 1) !default;
+$waves-color-purple:    rgba(156, 39, 176, 1) !default;
+$waves-color-green:     rgba(76, 175, 80, 1) !default;
+$waves-color-teal:      rgba(0, 150, 136, 1) !default;
 
-$waves-ripple-color: $waves-color-default !default;
+$waves-color-default-transparent: transparentize($waves-color-default, 0.8) !default;
+$waves-color-light-transparent:   transparentize($waves-color-light, 0.55) !default;
+$waves-color-red-transparent:     transparentize($waves-color-red, 0.30) !default;
+$waves-color-yellow-transparent:  transparentize($waves-color-yellow, 0.30) !default;
+$waves-color-orange-transparent:  transparentize($waves-color-orange, 0.30) !default;
+$waves-color-purple-transparent:  transparentize($waves-color-purple, 0.30) !default;
+$waves-color-green-transparent:   transparentize($waves-color-green, 0.30) !default;
+$waves-color-teal-transparent:    transparentize($waves-color-teal, 0.30) !default;
+
+$waves-ripple-color: $waves-color-default-transparent !default;
 $waves-ripple-opacity: 1 !default;
 $waves-ripple-radius: 50% !default;

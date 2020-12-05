@@ -1,22 +1,122 @@
+/*!
+ * jquery-waves
+ * https://github.com/isaeken/jquery-waves
+ *
+ * Copyright 2020 İsa Eken
+ * Released under the MIT license
+ * https://github.com/isaeken/jquery-waves/blob/master/LICENSE
+ */
+
 @import 'variables';
+
+@mixin jquery-waves-material-ripple-gradient($gradient) {
+  background: -webkit-radial-gradient($gradient);
+  background: -o-radial-gradient($gradient);
+  background: -moz-radial-gradient($gradient);
+  background: radial-gradient($gradient);
+}
 
 .waves-effect, .wave-effect
 {
-  position: relative !important;
-  overflow: hidden !important;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
-  &.waves-light .ie-waves-ripple { background-color: $waves-color-light; }
-  &.waves-red .ie-waves-ripple { background-color: $waves-color-red; }
-  &.waves-yellow .ie-waves-ripple { background-color: $waves-color-yellow; }
-  &.waves-orange .ie-waves-ripple { background-color: $waves-color-orange; }
-  &.waves-purple .ie-waves-ripple { background-color: $waves-color-purple; }
-  &.waves-green .ie-waves-ripple { background-color: $waves-color-green; }
-  &.waves-teal .ie-waves-ripple { background-color: $waves-color-teal; }
+  -webkit-tap-highlight-color: transparent;
+
+  &.waves-material .ie-waves-ripple
+  {
+    $gradient: rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, .3) 40%,rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .5) 60%, rgba(255, 255, 255, 0) 70%;
+    background: rgba(0, 0, 0, 0.2);
+    @include jquery-waves-material-ripple-gradient($gradient);
+  }
+
+  &.waves-light
+  {
+    .ie-waves-ripple { background-color: $waves-color-light-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-light, 0.8) 0, transparentize($waves-color-light, 0.7) 40%, transparentize($waves-color-light, 0.6) 50%, transparentize($waves-color-light, 0.5) 60%, invert($waves-color-light) 70%;
+      background: transparentize($waves-color-light, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
+
+  &.waves-red
+  {
+    .ie-waves-ripple { background-color: $waves-color-red-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-red, 0.8) 0, transparentize($waves-color-red, 0.7) 40%, transparentize($waves-color-red, 0.6) 50%, transparentize($waves-color-red, 0.5) 60%, darken($waves-color-red, 0.5) 70%;
+      background: transparentize($waves-color-red, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
+
+  &.waves-yellow
+  {
+    .ie-waves-ripple { background-color: $waves-color-yellow-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-yellow, 0.8) 0, transparentize($waves-color-yellow, 0.7) 40%, transparentize($waves-color-yellow, 0.6) 50%, transparentize($waves-color-yellow, 0.5) 60%, darken($waves-color-yellow, 0.5) 70%;
+      background: transparentize($waves-color-yellow, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
+
+  &.waves-orange
+  {
+    .ie-waves-ripple { background-color: $waves-color-orange-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-orange, 0.8) 0, transparentize($waves-color-orange, 0.7) 40%, transparentize($waves-color-orange, 0.6) 50%, transparentize($waves-color-orange, 0.5) 60%, darken($waves-color-orange, 0.5) 70%;
+      background: transparentize($waves-color-orange, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
+
+  &.waves-purple
+  {
+    .ie-waves-ripple { background-color: $waves-color-purple-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-purple, 0.8) 0, transparentize($waves-color-purple, 0.7) 40%, transparentize($waves-color-purple, 0.6) 50%, transparentize($waves-color-purple, 0.5) 60%, darken($waves-color-purple, 0.5) 70%;
+      background: transparentize($waves-color-purple, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
+
+  &.waves-green
+  {
+    .ie-waves-ripple { background-color: $waves-color-green-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-green, 0.8) 0, transparentize($waves-color-green, 0.7) 40%, transparentize($waves-color-green, 0.6) 50%, transparentize($waves-color-green, 0.5) 60%, darken($waves-color-green, 0.5) 70%;
+      background: transparentize($waves-color-green, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
+
+  &.waves-teal
+  {
+    .ie-waves-ripple { background-color: $waves-color-teal-transparent; }
+    &.waves-material .ie-waves-ripple
+    {
+      $gradient: transparentize($waves-color-teal, 0.8) 0, transparentize($waves-color-teal, 0.7) 40%, transparentize($waves-color-teal, 0.6) 50%, transparentize($waves-color-teal, 0.5) 60%, darken($waves-color-teal, 0.5) 70%;
+      background: transparentize($waves-color-teal, 0.8);
+      @include jquery-waves-material-ripple-gradient($gradient);
+    }
+  }
 }
 
 .ie-waves-ripple
 {
   position: absolute;
+  pointer-events: none;
   margin: 0;
   padding: 0;
   transform: translate(-50%, -50%);
