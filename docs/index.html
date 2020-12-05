@@ -62,7 +62,8 @@
 
         .box {
             position: relative;
-            display: block;
+            display: inline-block;
+            margin: 0.1rem;
             cursor: pointer;
             width: 250px;
             height: 250px;
@@ -166,6 +167,31 @@
             </div>
         </div>
 
+        <br>
+        <h3>Wave effect like mdbootstrap ripples</h3>
+        <div>
+            <code>
+                &lt;button class="waves-effect"&gt;Default&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-light bg-black"&gt;Light&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-red"&gt;Red&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-yellow"&gt;Yellow&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-orange"&gt;Orange&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-purple"&gt;Purple&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-green"&gt;Green&lt;/button&gt;<br>
+                &lt;button class="waves-effect waves-teal"&gt;Teal&lt;/button&gt;<br>
+            </code>
+            <div>
+                <button class="waves-effect waves-material">Default</button>
+                <button class="waves-effect waves-material waves-light bg-black">Light</button>
+                <button class="waves-effect waves-material waves-red">Red</button>
+                <button class="waves-effect waves-material waves-yellow">Yellow</button>
+                <button class="waves-effect waves-material waves-orange">Orange</button>
+                <button class="waves-effect waves-material waves-purple">Purple</button>
+                <button class="waves-effect waves-material waves-green">Green</button>
+                <button class="waves-effect waves-material waves-teal">Teal</button>
+            </div>
+        </div>
+
         <br><br>
         <h3>Wave effect with opacity</h3>
         <div>
@@ -181,87 +207,181 @@
         <h3>Wave effect with duration</h3>
         <div>
             <h4 class="text-gray-700">Default</h4>
-            <code>&lt;button data-waves data-waves-duration="800"&gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="600" data-waves-hide-duration="800"&gt;Button&lt;/button&gt;</code>
             <div>
-                <button data-waves data-waves-duration="800" class="sm">Small Button</button>
-                <button data-waves data-waves-duration="800" class="">Button</button>
-                <button data-waves data-waves-duration="800" class="lg">Large Button</button>
+                <button data-waves data-waves-duration="600" data-waves-hide-duration="800" class="sm">Small Button</button>
+                <button data-waves data-waves-duration="600" data-waves-hide-duration="800" class="">Button</button>
+                <button data-waves data-waves-duration="600" data-waves-hide-duration="800" class="lg">Large Button</button>
             </div>
             <h4 class="text-gray-700">Fast</h4>
-            <code>&lt;button data-waves data-waves-duration="300"&gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="300" data-waves-hide-duration="400"&gt;Button&lt;/button&gt;</code>
             <div>
-                <button data-waves data-waves-duration="300" class="sm">Small Button</button>
-                <button data-waves data-waves-duration="300" class="">Button</button>
-                <button data-waves data-waves-duration="300" class="lg">Large Button</button>
+                <button data-waves data-waves-duration="300" data-waves-hide-duration="400" class="sm">Small Button</button>
+                <button data-waves data-waves-duration="300" data-waves-hide-duration="400" class="">Button</button>
+                <button data-waves data-waves-duration="300" data-waves-hide-duration="400" class="lg">Large Button</button>
             </div>
             <h4 class="text-gray-700">Slow</h4>
-            <code>&lt;button data-waves data-waves-duration="1200"&gt;Button&lt;/button&gt;</code>
+            <code>&lt;button data-waves data-waves-duration="800" data-waves-hide-duration="1200"&gt;Button&lt;/button&gt;</code>
             <div>
-                <button data-waves data-waves-duration="1200" class="sm">Small Button</button>
-                <button data-waves data-waves-duration="1200" class="">Button</button>
-                <button data-waves data-waves-duration="1200" class="lg">Large Button</button>
+                <button data-waves data-waves-duration="800" data-waves-hide-duration="1200" class="sm">Small Button</button>
+                <button data-waves data-waves-duration="800" data-waves-hide-duration="1200" class="">Button</button>
+                <button data-waves data-waves-duration="800" data-waves-hide-duration="1200" class="lg">Large Button</button>
             </div>
         </div>
 
         <br><br>
-        <h3>Wave effect on complete event</h3>
-        <div>
-            <code>&lt;button data-waves data-waves-duration="800"&gt;Button&lt;/button&gt;</code>
-            <div>
-                <button data-waves data-waves-on-complete="alert('Completed wave effect');" class="sm">Small Button</button>
-                <button data-waves data-waves-on-complete="alert('Completed wave effect');" class="">Button</button>
-                <button data-waves data-waves-on-complete="alert('Completed wave effect');" class="lg">Large Button</button>
-            </div>
-        </div>
-
-        <br><br>
-        <h3>Wave effect on custom element</h3>
+        <h3>Ripples in box</h3>
         <div>
             <code><pre>.box {
     position: relative;
-    display: block;
+    display: inline-block;
+    margin: 0.1rem;
     cursor: pointer;
     width: 250px;
     height: 250px;
     border: 1px solid black;
 }</pre></code>
             <br>
-            <code>&lt;div class="box waves-effect"&gt;This is a box&lt;/div&gt;</code>
+            <code>
+                &lt;div class="box waves-effect"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box bg-black waves-effect waves-light"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-red"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-yellow"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-orange"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-purple"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-green"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-teal"&gt;This is a box&lt;/div&gt; <br>
+            </code>
             <br>
             <div>
                 <div class="box waves-effect">This is a box</div>
+                <div class="box bg-black waves-effect waves-light">This is a box</div>
+                <div class="box waves-effect waves-red">This is a box</div>
+                <div class="box waves-effect waves-yellow">This is a box</div>
+                <div class="box waves-effect waves-orange">This is a box</div>
+                <div class="box waves-effect waves-purple">This is a box</div>
+                <div class="box waves-effect waves-green">This is a box</div>
+                <div class="box waves-effect waves-teal">This is a box</div>
+            </div>
+            <br>
+            <code>
+                &lt;div class="box waves-effect waves-material"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box bg-black waves-effect waves-material waves-light"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-material waves-red"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-material waves-yellow"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-material waves-orange"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-material waves-purple"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-material waves-green"&gt;This is a box&lt;/div&gt; <br>
+                &lt;div class="box waves-effect waves-material waves-teal"&gt;This is a box&lt;/div&gt; <br>
+            </code>
+            <br>
+            <div>
+                <div class="box waves-effect waves-material">This is a box</div>
+                <div class="box bg-black waves-effect waves-material waves-light">This is a box</div>
+                <div class="box waves-effect waves-material waves-red">This is a box</div>
+                <div class="box waves-effect waves-material waves-yellow">This is a box</div>
+                <div class="box waves-effect waves-material waves-orange">This is a box</div>
+                <div class="box waves-effect waves-material waves-purple">This is a box</div>
+                <div class="box waves-effect waves-material waves-green">This is a box</div>
+                <div class="box waves-effect waves-material waves-teal">This is a box</div>
             </div>
         </div>
 
         <br><br>
         <h3>Create wave effect with programmatically</h3>
         <div>
-            <code><pre>&lt;div id="elementId" class="box"&gt;Click me&lt;/div&gt;
-&lt;script&gt;
-    $('#elementId').click(function () {
-        $(this).waveEffect(
-            50, // x position
-            80, // y position
-            'red', // background color
-            1, // opacity
-            2000, // duration
-            function () { } // onComplete event
-        );
+            <code><pre>&lt;div id="rippleContainer" data-waves-background-color="random" class="box" style="display: block">&lt;/div>
+&lt;button id="addRipple">Click me to add ripple&lt;/button>
+&lt;script>
+    $('#addRipple').click(function () {
+        $('#rippleContainer').rippleAnimation();
     });
-&lt;/script&gt;</pre></code>
+&lt;/script></pre></code>
             <br>
             <div>
-                <div id="elementId" class="box">Click me</div>
+                <div id="rippleContainer" data-waves-background-color="random" class="box" style="display: block"></div>
+                <button id="addRipple">Click me to add ripple</button>
                 <script>
-                    $('#elementId').click(function () {
-                        $(this).waveEffect(
+                    $('#addRipple').click(function () {
+                        $('#rippleContainer').rippleAnimation();
+                    });
+                </script>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <code><pre>&lt;div id="elementRipple" class="box" style="display: block">Click me&lt;/div>
+&lt;button id="removeRipple">Click me to remove ripples&lt;/button>
+&lt;script>
+    var ripples = [];
+    $('#elementRipple').click(function () {
+        var ripple = $(this).ripple(
+            50, // x position
+            80, // y position
+        );
+        ripples.push(ripple);
+    });
+    $('#removeRipple').click(function () {
+        $.each(ripples, function (index, ripple) {
+            $('#removeRipple').hideRipple(ripple);
+        });
+    });
+&lt;/script></pre></code>
+            <br>
+            <div>
+                <div id="elementRipple" class="box" style="display: block">Click me</div>
+                <button id="removeRipple">Click me to remove ripples</button>
+                <script>
+                    var ripples = [];
+                    $('#elementRipple').click(function () {
+                        var ripple = $(this).ripple(
                             50, // x position
                             80, // y position
-                            'red', // background color
-                            1, // opacity
-                            2000, // duration
-                            function () { } // onComplete event
                         );
+                        ripples.push(ripple);
+                    });
+                    $('#removeRipple').click(function () {
+                        $.each(ripples, function (index, ripple) {
+                            $('#removeRipple').hideRipple(ripple);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <code><pre>&lt;div id="elementRippleCenter" class="box" style="display: block">Click me&lt;/div>
+&lt;button id="removeRippleCenter">Click me to remove ripples&lt;/button>
+&lt;script>
+    var ripples = [];
+    $('#elementRippleCenter').click(function () {
+        var ripple = $(this).ripple();
+        ripples.push(ripple);
+    });
+    $('#removeRippleCenter').click(function () {
+        $.each(ripples, function (index, ripple) {
+            $('#removeRippleCenter').hideRipple(ripple);
+        });
+    });
+&lt;/script></pre></code>
+            <br>
+            <div>
+                <div id="elementRippleCenter" class="box" style="display: block">Click me</div>
+                <button id="removeRippleCenter">Click me to remove ripples</button>
+                <script>
+                    var ripples = [];
+                    $('#elementRippleCenter').click(function () {
+                        var ripple = $(this).ripple();
+                        ripples.push(ripple);
+                    });
+                    $('#removeRippleCenter').click(function () {
+                        $.each(ripples, function (index, ripple) {
+                            $('#removeRippleCenter').hideRipple(ripple);
+                        });
                     });
                 </script>
             </div>
