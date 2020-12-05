@@ -19,6 +19,7 @@ You can install jquery-waves plugin using npm or include directly files
 
 #### install using npm
 ```bash
+npm install animejs
 npm install jquery-waves
 ```
 #### or include files
