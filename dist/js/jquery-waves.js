@@ -278,7 +278,7 @@ var rippleClass = 'ie-waves-ripple';
      * The ripple
      */
 
-    var $ripple = $this.wave(x, y, function () {
+    var $ripple = $this.ripple(x, y, function () {
       /**
        * Hide ripple after show animation complete
        */
