@@ -27,6 +27,7 @@ npm install jquery-waves
 ...
 <link rel="stylesheet" href="/your/servers/assets/path/css/jquery-waves.min.css">
 <script src="/your/servers/assets/path/js/jquery.min.js"></script>
+<script src="/your/servers/assets/path/js/anime.min.js"></script>
 <script src="/your/servers/assets/path/js/jquery-waves.min.js"></script>
 ...
 </head>
@@ -39,7 +40,7 @@ Creating wave effect with classes
 ````
 or programmatically
 ````javascript
-$('#element').waveEffect(0, 0);
+$('#element').rippleAnimation();
 ````
 
 ## Help and docs
